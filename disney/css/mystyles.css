@@ -1,0 +1,458 @@
+/*
+    Light yellow    |  #f7f9bd
+    Darker Blue     |  #01217c
+    Lighter Purple  |  #8070d0
+    Pink-y Purple   |  #b075df
+*/
+
+body{
+    background-color: white;
+    color: #8070d0;
+    font-family: garamond, serif;
+    font-size: 20px;
+}
+.right{
+    text-align: right;
+}
+.left{
+    padding-left: 50px;
+}
+footer{
+    padding: 50px 10px;
+    background-color: #01217c;
+    font-size: 15px;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+.row{
+    max-width: 99%;
+}
+h1{
+    font-family: charlemagne-std, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5em;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #01217c;
+    background-color: #b075df;
+    margin: 0;
+    padding: 25px;
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+h4{
+    font-size: 2em;
+}
+a{
+    color: #01217c;
+}
+a:hover{
+    color: #8070d0;
+}
+table{
+    font-size: 0.7em;
+}
+/*.nav-tabs .nav-link{
+    border-color: #f7f9bd;*/
+    /*border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}*/
+.nav-link{
+    color: #f7F9bd;
+}
+#content{
+    padding: 25px 100px;
+    background-color: white;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #01217c;
+    background-color: white;
+    /*border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-color: white;*/
+}
+.pixar{
+    width: 75%;
+    margin: auto;
+}
+@media (max-width: 1000px) {
+    #pixarcards{
+        display: none;
+    }
+    #listedpixar{
+        display: initial;
+    }
+}
+@media (max-width: 1300px) {
+    .large{
+        display: none;
+    }
+    .tiny{
+        display: initial;
+    }
+}
+@media (min-width: 1000px) {
+    #pixarcards{
+        display: initial;
+    }
+    #listedpixar{
+        display: none;
+    }
+}
+@media (min-width: 1300px) {
+    .large{
+        display: none;
+    }
+    .tiny{
+        display: initial;
+    }
+}
+.nav-tabs .nav-link.active:hover{
+    background-color: white;
+    /*border-color: white;*/
+}
+.topcolor{
+    background-color: #b075df;
+}
+.nav{
+    font-family: charlemagne-std, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.nav-tabs{
+    /*border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-color: white;*/
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus{
+    /*border-top-left-radius: 15px;
+    border-top-right-radius: 15px;*/
+    background-color: #f7f9bd;
+    /*border-color: #f7f9bd;
+    border-bottom-color: white;*/
+}
+.card{
+    margin-top: 5px;
+}
+#reset{
+    color: white;
+    background-color: lightskyblue;
+    border-color: skyblue;
+    width: 100%;
+}
+#group1 #group2{
+    width: 100%;
+}
+.stuff{
+    padding: 25px 100px;
+    background-color: white;
+}
+#contactform{
+    width: 75%;
+    margin: auto;
+}
+.pink{
+    color: white;
+    background-color: #f48fb1;
+    
+}
+.pink:hover{
+    color: #f48fb1;
+    background-color: whitesmoke;
+    
+}
+.red{
+    color: white;
+    background-color: red;
+    
+}
+.red:hover{
+    color: red;
+    background-color: whitesmoke;
+    
+}
+.orange{
+    color: white;
+    background-color: orange;
+   
+}
+.orange:hover{
+    color: orange;
+    background-color: whitesmoke;
+    
+}
+.yellow{
+    color: white;
+    background-color: #fdd835;
+    
+}
+.yellow:hover{
+    color: #fdd835;
+    background-color: whitesmoke;
+    
+}
+.green{
+    color: white;
+    background-color: green;
+    
+}
+.green:hover{
+    color: green;
+    background-color: whitesmoke;
+    
+}
+.lblue{
+    color: white;
+    background-color: lightskyblue;
+    
+}
+.lblue:hover{
+    color: lightskyblue;
+    background-color: whitesmoke;
+    
+}
+.dblue{
+    color: white;
+    background-color: darkblue;
+    
+}
+.dblue:hover{
+    color: darkblue;
+    background-color: whitesmoke;
+    
+}
+.purple{
+    color: white;
+    background-color: #9c27b0;
+    border-bottom: 1px solid black;
+}
+.purple:hover{
+    color: #9c27b0;
+    background-color: whitesmoke;
+    
+}
+.white{
+    color: black;
+    background-color: white;
+    
+}
+.white:hover{
+    color: white;
+    background-color: lightgrey;
+    
+}
+.grey{
+    color: white;
+    background-color: grey;
+    
+}
+.grey:hover{
+    color: grey;
+    background-color: whitesmoke;
+    
+}
+.black{
+    color: white;
+    background-color: black;
+    
+}
+.black:hover{
+    color: black;
+    background-color: whitesmoke;
+    
+}
+.brown{
+    color: white;
+    background-color: saddlebrown;
+    
+}
+.brown:hover{
+    color: saddlebrown;
+    background-color: whitesmoke;
+    
+}
+.tan{
+    color: white;
+    background-color: tan;
+    border-bottom: 1px solid black;
+}
+.tan:hover{
+    color: tan;
+    background-color: whitesmoke;
+}
+.pink, .red, .orange, .yellow, .green, .lblue, .dblue, .purple, .white, .grey, .black, .brown, .tan, .pink:hover, .red:hover, .orange:hover, .yellow:hover, .green:hover, .lblue:hover, .dblue:hover, .purple:hover, .white:hover, .grey:hover, .black:hover, .brown:hover{
+    border-bottom: 1px solid black;
+}
+.pink:active, .red:active, .orange:active, .yellow:active, .green:active, .lblue:active, .dblue:active, .purple:active, .white:active, .grey:active, .black:active, .brown:active{
+    border-bottom: 1px solid black;
+}
+.btn-group-vertical{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-group-vertical .btn{
+    max-width: 100%;
+    border-bottom: 1px solid black;
+}
+#group2{
+    float:right;
+}
+/*@media screen and (max-width:1200px){
+    .btn-group-vertical {
+        
+        -ms-flex-direction: row;
+        flex-direction: row;
+       
+        margin-left: auto;
+        margin-right: auto;
+       
+          
+    }
+    #group1{
+        width:100%;
+        display:flex;
+        
+
+       
+        
+    }
+    #group2{
+        margin-top: 90px;
+        display:inline;
+        
+        
+        
+        
+    }
+    
+} 
+*/
+table{
+    text-align: center;
+    table-layout: fixed;
+}
+tr{
+    padding: 0;
+    margin: 0;
+    text-align: center; 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#reset{
+    color: white;
+    background-color: purple;
+}
+#reset:hover{
+    color: purple;
+    background-color: white;
+}
+.ina{
+    color: grey;
+}
+.act{
+    color: #880077;
+    font-weight: bold;
+}
+.btn-primary{
+    background-color: #b075df;
+    border-color: #b075df;
+    color: white;
+}
+.btn-primary:hover{
+    color: white;
+    border-color: #ccabe7;
+    background-color: #ccabe7;
+}
+.btn-primary:focus, .btn-primary.focus {
+    color: white;
+    border-color: #ccabe7;
+    background-color: #ccabe7;
+}
+  
+.btn-primary.disabled, .btn-primary:disabled {
+    color: white;
+    border-color: #ccabe7;
+    background-color: #ccabe7;
+}
+  
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    color: white;
+    border-color: #ccabe7;
+    background-color: #ccabe7;
+}
+  
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    color: white;
+    border-color: #ccabe7;
+    background-color: #ccabe7;
+}
+#homepic{
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 40px;
+}
+.center{
+    text-align: center;
+}
+
+iframe{
+    height: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 100%;
+}
+  
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

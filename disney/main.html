@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/mystyles.css">
+
+        <link rel="shortcut icon" href="imgs/lamp.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://use.typekit.net/kra3ppn.css">
+
+        <title>Home</title>
+    </head>
+    <body>
+        <h1><img src="imgs/pixar-lamp.png" height="75px" width="auto"> Home Page <img src="imgs/pixar-lamp.png" height="75px" width="auto"></h1>
+        <div class="sticky-top navbar-fixed">
+            <nav class="topcolor nav-justified" role="navigation">
+                <ul class="nav nav-tabs nav-fill">
+                    <li class="nav-item nav-justified">
+                        <a class="nav-link active select" href="main.html">Welcome</a>
+                    </li>
+                    <li class="nav-item nav-justified">
+                        <a class="nav-link" href="movielists.html">List of Films</a>
+                    </li>
+                    <li class="nav-item nav-justified">
+                        <a class="nav-link" href="disneybound.html">Disneybound Help</a>
+                    </li>
+                    <li class="nav-item nav-justified">
+                        <a class="nav-link" href="contact.html">Contact the Team</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content">
+            <h4>What is Disneybounding?</h4>
+            <p>At each of the Disney Parks properties, it's against the rules to dress in costume as a Disney character when you're over the age of 14. This is unfortunate, however, people have become created and come up with a solution, coined "disneybounding".</p>
+            <p>Disneybounding means dressing in the spirit of a (Disney) character. Typically the look is inspired via the colors chosen.</p>
+            <img src="https://style.disney.com/wp-content/uploads/2014/06/DisneyBound-Default.jpg" id="homepic">
+            <hr>
+            <h4 class="center">Want a random Disney movie to bound from? Check out the Disneybounding blog!</h4>
+            <button class="btn btn-primary large-btn" id="myBtn">Try it Out</button>
+        </div>
+
+        <!-- Trigger/Open The Modal 
+        <button id="myBtn">Open Modal</button>-->
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe id="rand"></iframe>
+        </div>
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-6 left">
+                    <p>I am in no way associated with the Walt Disney Company.</p>
+                </div>
+                <div class="col-lg-6 right">
+                    Ayla Kovner &copy; 2019
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script>
+
+            $(document).ready(function(){
+                var locations = [
+                "http://disneybound.co/tagged/toy-story",
+                "http://disneybound.co/tagged/bugs+life",
+                "http://disneybound.co/tagged/monsters+inc",
+                "http://disneybound.co/tagged/finding+nemo",
+                "http://disneybound.co/tagged/incredibles",
+                "http://disneybound.co/tagged/cars",
+                "http://disneybound.co/tagged/ratatouille",
+                "http://disneybound.co/tagged/up",
+                "http://disneybound.co/tagged/brave",
+                "http://disneybound.co/tagged/inside-out",
+                "http://disneybound.co/tagged/coco"
+                ];
+                var iframe = $('#rand');
+                var i = Math.floor(Math.random()*locations.length);
+                setInterval(function () {
+                    iframe.attr('src', locations[i]);
+                });
+            });
+
+            var dbpages = new Array();
+            dbpages[0] = "http://disneybound.co/tagged/toy-story";
+            dbpages[1] = "http://disneybound.co/tagged/bugs+life";
+            dbpages[2] = "http://disneybound.co/tagged/monsters+inc";
+            dbpages[3] = "http://disneybound.co/tagged/finding+nemo";
+            dbpages[4] = "http://disneybound.co/tagged/incredibles";
+            dbpages[5] = "http://disneybound.co/tagged/cars";
+            dbpages[6] = "http://disneybound.co/tagged/ratatouille";
+            dbpages[7] = "http://disneybound.co/tagged/up";
+            dbpages[8] = "http://disneybound.co/tagged/brave";
+            dbpages[9] = "http://disneybound.co/tagged/inside-out";
+            dbpages[10] = "http://disneybound.co/tagged/coco";
+        
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        
+        </script>
+    </body>
+</html>

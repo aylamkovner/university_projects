@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/mystyles.css">
+
+        <link rel="shortcut icon" href="imgs/lamp.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://use.typekit.net/kra3ppn.css">
+
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <h1><img src="imgs/pixar-lamp.png" height="75px" width="auto"> Contact Us <img src="imgs/pixar-lamp.png" height="75px" width="auto"></h1>
+        <div class="sticky-top navbar-fixed">
+            <nav class="topcolor nav-justified" role="navigation">
+                <ul class="nav nav-tabs nav-fill">
+                    <li class="nav-item nav-justified">
+                        <a class="nav-link" href="main.html">Welcome</a>
+                    </li>
+                    <li class="nav-item nav-justified">
+                        <a class="nav-link" href="movielists.html">List of Films</a>
+                    </li>
+                    <li class="nav-item nav-justified">
+                        <a class="nav-link" href="disneybound.html">Disneybound Help</a>
+                    </li>
+                    <li class="nav-item nav-justified">
+                        <a class="nav-link active select" href="contact.html">Contact the Team</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="stuff">
+            <form id="contactform" method="post" action="emailing.php">
+                <div class="form-group">
+                    <label for="name">Please enter your first name:</label>
+                    <input type="text" class="form-control"" placeholder="First Name" name="first">
+                </div>
+                <div class="form-group">
+                    <label for="name">Please enter your last name:</label>
+                    <input type="text" class="form-control"" placeholder="Last Name" name="last">
+                </div>
+                <div class="form-group">
+                    <label for="emailaddress">Please enter your email address:</label>
+                    <input type="email" class="form-control" id="emailaddress" placeholder="name@example.com" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="subjectline">Please enter the email subject:</label>
+                    <input type="text" class="form-control" id="subjectline" placeholder="Enter your email's subject" name="subject">
+                </div>
+                <!--<div class="form-group">
+                    <label for="exampleFormControlSelect1">What can we help with?</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                    <option name="subject" value="Recommend a character">Recommend a character</option>
+                    <option name="subject" value="Point out an error on our site">Point out an error on our site</option>
+                    <option name="subject" value="Submit a disneybound">Submit a disneybound!</option>
+                    <option name="subject" value="Unlisted Inquery">Other inquery</option>
+                    </select>
+                </div>-->
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Enter your message to the team:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Send!</button>
+            </form>
+        </div>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>
