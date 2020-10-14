@@ -1,0 +1,28 @@
+.background    { background: #ffc0cb;
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+.background td { padding: 0;          }
+.lava          { background: #adff2f  }
+.wall          { background: #b03060  }
+.portal        { background: #ee82ee;
+                 background-image: url("images/portal.png")}
+.Immune        { background: }
+
+.actor  { position: absolute; }
+.coin   { background: #ff69b4 }
+.player { background: #ff1493 }
+.fast   { background: #d02090 }
+
+.game {
+  overflow: hidden;
+  max-width: 1000px;
+  max-height: 750px;
+  position: relative;
+}
+
+.lost .player {
+  background: #98fb98;
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
